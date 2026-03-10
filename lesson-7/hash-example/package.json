@@ -16,6 +16,6 @@
     "nodemon": "^2.0.13"
   },
   "dependencies": {
-
+    "bcrypt": "^6.0.0"
   }
 }
