@@ -12,8 +12,8 @@ export const createSession = userId => {
     userId,
     accessToken,
     refreshToken,
-    accessTokenValidUntil: new Date(Date.now()+ accessTokenLifetime),
-    refreshTokenValidUntil: new Date(Date.now()+ refreshTokenLifetime),
+    accessTokenValidUntil: new Date(Date.now() + accessTokenLifetime),
+    refreshTokenValidUntil: new Date(Date.now() + refreshTokenLifetime),
   })
 }
 
