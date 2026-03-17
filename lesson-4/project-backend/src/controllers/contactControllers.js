@@ -30,7 +30,7 @@ export const addContact = async(req, res)=> {
 
 export const updateContactById = async(req, res)=> {
   const {id: _id} = req.params;
-  const updateContact = await Contact.findOneAndUpdate({_id}, req.body, {new: true});
+  const updateContact = await Contact.findOneAndUpdate({_id}, req.body, {returnDocument: 'after'});
   if(!updateContact) throw createHttpError(404, `Contact with id=${_id} not found`);
   res.json(updateContact);
 };

@@ -5,5 +5,5 @@ export const handleSaveError = (error, doc, next)=> {
 
 export const setUpdateRules = function() {
   this.options.runValidators = true;
-  this.options.new = true;
+  this.options.returnDocument = 'after';
 };
